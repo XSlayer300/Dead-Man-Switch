@@ -799,11 +799,6 @@
               <coverage>0.20</coverage>
               <parts>
                 <li>
-                  <def>ArtificialBrain</def>
-                  <coverage>0.05</coverage>
-                  <depth>Inside</depth>
-                </li>
-                <li>
                   <def>SightSensor</def>
                   <customLabel>central sight sensor</customLabel>
                   <coverage>0.20</coverage>
@@ -1015,6 +1010,11 @@
         </li>
         <li>
           <def>FluidReprocessor</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>ArtificialBrain</def>
           <coverage>0.05</coverage>
           <depth>Inside</depth>
         </li>
