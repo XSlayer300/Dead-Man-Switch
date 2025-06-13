@@ -118,20 +118,28 @@
     <isFighter>true</isFighter>
     <combatPower>150</combatPower>
     <lifeStages>      
-    <li>
-      <bodyGraphicData>
-        <texPath>Things/Automatroid/ronin</texPath>
-        <shaderType>CutoutComplex</shaderType>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>1.3</drawSize>
-      </bodyGraphicData>
-    </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/ronin</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Automatroid/OldTexture/ronin</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+        <drawSize>1.4</drawSize>
+        <shadowData>
+          <volume>(0.35,1,0.35)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -234,20 +242,28 @@
     <isFighter>true</isFighter>
     <combatPower>150</combatPower>
     <lifeStages>      
-    <li>
-      <bodyGraphicData>
-        <texPath>Things/Automatroid/gladiator</texPath>
-        <shaderType>CutoutComplex</shaderType>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>1.3</drawSize>
-      </bodyGraphicData>
-    </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/gladiator</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Automatroid/OldTexture/gladiator</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+        <drawSize>1.4</drawSize>
+        <shadowData>
+          <volume>(0.35,1,0.35)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -324,7 +340,11 @@
           <texPath>Things/Automatroid/siegeBreaker</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+        <drawSize>1.4</drawSize>
+        <shadowData>
+          <volume>(0.35,1,0.35)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
         </bodyGraphicData>
       </li>
       <li>
@@ -332,7 +352,11 @@
           <texPath>Things/Automatroid/OldTexture/siegeBreaker</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+        <drawSize>1.4</drawSize>
+        <shadowData>
+          <volume>(0.35,1,0.35)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -448,6 +472,10 @@
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
       <li>
@@ -456,6 +484,10 @@
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -522,20 +554,28 @@
     <isFighter>true</isFighter>
     <combatPower>120</combatPower>
     <lifeStages>      
-    <li>
-      <bodyGraphicData>
-        <texPath>Things/Automatroid/phalanx</texPath>
-        <shaderType>CutoutComplex</shaderType>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>1.3</drawSize>
-      </bodyGraphicData>
-    </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/phalanx</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Automatroid/OldTexture/phalanx</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>

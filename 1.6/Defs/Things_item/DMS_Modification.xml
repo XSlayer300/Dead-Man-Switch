@@ -118,6 +118,9 @@
         <filthOnDamaged>DMS_BrokenCeramics</filthOnDamaged>
         <effectOnDamaged>Deflect_Metal</effectOnDamaged>
       </li>
+      <li Class="Fortified.HediffCompProperties_Modification">
+        <applyJob>FFF_ModificationRemove</applyJob>
+      </li>
     </comps>
     <stages>
       <li>
@@ -190,7 +193,7 @@
 
   <HediffDef>
     <defName>DMS_ReinforcedFrame</defName>
-    <hediffClass>Hediff</hediffClass>
+    <hediffClass>HediffWithComps</hediffClass>
     <label>Reinforced Frame</label>
     <description>A set of tungsteel parts made to replace those prone to wearing down, effectively improving reliability and durability during high-intensity combat. These heavy duty replacement parts will significantly increase the weight of the mech and affect its speed.</description>
     <descriptionHyperlinks>
@@ -211,6 +214,11 @@
         </statFactors>
       </li>
     </stages>
+    <comps>
+      <li Class="Fortified.HediffCompProperties_Modification">
+        <applyJob>FFF_ModificationRemove</applyJob>
+      </li>
+    </comps>
   </HediffDef>
 
   <!-- 裂變電池 ，由於需要聯動才能自行生產，因此沒有自己的Costlist-->
@@ -262,7 +270,7 @@
 
   <HediffDef>
     <defName>DMS_NuclearBattery</defName>
-    <hediffClass>Hediff</hediffClass>
+    <hediffClass>HediffWithComps</hediffClass>
     <label>Nuclear Battery</label>
     <description>The abundant output of installed nuclear powered quantum batteries eliminates the need to recharge. The reactor can be overloaded to produce a chain reaction meltdown comparable to an anti-grain warhead.</description>
     <descriptionHyperlinks>
@@ -279,6 +287,11 @@
         </statFactors>
       </li>
     </stages>
+    <comps>
+      <li Class="Fortified.HediffCompProperties_Modification">
+        <applyJob>FFF_ModificationRemove</applyJob>
+      </li>
+    </comps>
     <abilities>
       <li>DMS_NuclearOverload</li>
     </abilities>
@@ -386,7 +399,7 @@
   </ThingDef>
   <HediffDef>
     <defName>DMS_SyntheticTendon</defName>
-    <hediffClass>Hediff</hediffClass>
+    <hediffClass>HediffWithComps</hediffClass>
     <label>Synthetic Tendon</label>
     <description>Biosynthetic muscles attached on the outer layer of mechanical limbs. Synthetic tendons effectively increase output at the cost of additional energy consumption.</description>
     <descriptionHyperlinks>
@@ -406,6 +419,11 @@
         </statOffsets>
       </li>
     </stages>
+    <comps>
+      <li Class="Fortified.HediffCompProperties_Modification">
+        <applyJob>FFF_ModificationRemove</applyJob>
+      </li>
+    </comps>
   </HediffDef>
 
   <ThingDef ParentName="BaseModificationItem">
@@ -459,7 +477,7 @@
   
   <HediffDef>
     <defName>DMS_TB_HeavyHydraulicFrame</defName>
-    <hediffClass>Hediff</hediffClass>
+    <hediffClass>HediffWithComps</hediffClass>
     <label>Heavy Hydraulic Frame</label>
     <description>A heavy hydraulic module and power pack for bipedal mechs to gain the capability to lift heavier objects or mount heavy weapons.</description>
     <descriptionHyperlinks>
@@ -483,6 +501,11 @@
         </statOffsets>
       </li>
     </stages>
+    <comps>
+      <li Class="Fortified.HediffCompProperties_Modification">
+        <applyJob>FFF_ModificationRemove</applyJob>
+      </li>
+    </comps>
     <renderNodeProperties>
       <li>
         <debugLabel>hydraulic frame</debugLabel>
@@ -568,9 +591,10 @@
       </li>
     </comps>
   </ThingDef>
+
   <HediffDef>
     <defName>DMS_BF_ExtendCargo</defName>
-    <hediffClass>Hediff</hediffClass>
+    <hediffClass>HediffWithComps</hediffClass>
     <label>Extended Cargo Rack</label>
     <description>Side mounted cargo racks suitable for battle frame pylons. The racks increase the carrying capacity of battle frame and their variants.</description>
     <descriptionHyperlinks>
@@ -597,6 +621,11 @@
         </statOffsets>
       </li>
     </stages>
+    <comps>
+      <li Class="Fortified.HediffCompProperties_Modification">
+        <applyJob>FFF_ModificationRemove</applyJob>
+      </li>
+    </comps>
     <renderNodeProperties>
       <li>
         <nodeClass>PawnRenderNode</nodeClass>
@@ -679,9 +708,10 @@
       </li>
     </comps>
   </ThingDef>
+
   <HediffDef>
     <defName>DMS_BF_ExtendArmor</defName>
-    <hediffClass>Hediff</hediffClass>
+    <hediffClass>HediffWithComps</hediffClass>
     <label>Additional Armor Plating</label>
     <description>Composite armor plates designed for battle frame pylons add survivability to the battle frame by protecting it from fragmentation and medium-caliber gunfire.</description>
     <descriptionHyperlinks>
@@ -709,6 +739,11 @@
         </damageFactors>
       </li>
     </stages>
+    <comps>
+      <li Class="Fortified.HediffCompProperties_Modification">
+        <applyJob>FFF_ModificationRemove</applyJob>
+      </li>
+    </comps>
     <renderNodeProperties>
       <li>
         <nodeClass>PawnRenderNode</nodeClass>

@@ -75,7 +75,11 @@
           <texPath>Things/Automatroid/arquebusier</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
       <li>
@@ -83,7 +87,11 @@
           <texPath>Things/Automatroid/OldTexture/arquebusier</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -142,7 +150,11 @@
           <texPath>Things/Automatroid/Jaeger</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
       <li>
@@ -150,7 +162,11 @@
           <texPath>Things/Automatroid/Jaeger</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -212,7 +228,11 @@
           <texPath>Things/Automatroid/Pioneer</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
       <li>
@@ -220,7 +240,11 @@
           <texPath>Things/Automatroid/OldTexture/Pioneer</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -281,7 +305,11 @@
           <texPath>Things/Automatroid/Sniper</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
       <li>
@@ -289,7 +317,11 @@
           <texPath>Things/Automatroid/OldTexture/Sniper</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.35,1,0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>

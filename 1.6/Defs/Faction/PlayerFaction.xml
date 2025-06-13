@@ -177,6 +177,10 @@
           <hediff>CryptosleepSickness</hediff>
           <severityRange>1~1</severityRange>
         </li>
+        <li Class="Fortified.ScenPart_PrefabGeneration">
+          <def>FFF_PrefabGen</def>
+          <prefab>DMS_LightTower</prefab>
+        </li>
         <li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
           <factionDef>DMS_Army</factionDef>
           <affectHiddenFactions>True</affectHiddenFactions>
