@@ -13,6 +13,7 @@
 		<weaponTags>
 			<li>A_SC_LongRifle</li>
 		</weaponTags>
+		<uiIconScale>0.5</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AntiWalkerRifle</texPath>
 			<drawSize>2.25</drawSize>
@@ -86,6 +87,7 @@
 			<li>A_SuppressWeaponHeavy</li>
 			<li>A_MG_Heavy</li>
 		</weaponTags>
+		<uiIconScale>0.6</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_HeavyMachineGun</texPath>
 			<drawSize>1.75</drawSize>
@@ -169,6 +171,7 @@
 			<li>DMS_MechWeaponHeavy</li>
 			<li>A_SuppressWeaponHeavy</li>
 		</weaponTags>
+		<uiIconScale>0.5</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Autocannon</texPath>
 			<drawSize>2.25</drawSize>
@@ -229,6 +232,7 @@
 		<defName>DMS_Gun_Recoilless</defName>
 		<label>Recoilless Rifle</label>
 		<description>A recoilless rifle designed to counter heavy-armored targets at range.\n\nThis weapon is designed specifically for automatroid use,it's so heavy only specific automatroids can operate it.</description>
+		<uiIconScale>0.6</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_RecoillessRifle</texPath>
 			<drawSize>2.5</drawSize>
@@ -291,6 +295,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>DMS_Bullet_RR</defName>
 		<label>Shape-charged Grenade</label>
@@ -342,6 +347,7 @@
 			<li>NoSwitch</li>
 			<li>DMS_MechWeaponUltraHeavy</li>
 		</weaponTags>
+		<uiIconScale>0.4</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_2A38M</texPath>
 			<drawSize>4</drawSize>
@@ -429,6 +435,7 @@
 			<li>DMS_DragoonGun</li>
 			<li>DMS_Tarbosaurus_Gun</li>
 		</weaponTags>
+		<uiIconScale>0.4</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Dragoon_Rifle</texPath>
 			<drawSize>3</drawSize>
@@ -523,7 +530,8 @@
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_Gun_DragoonGrenade</defName>
 		<label>Mech Heavy Grenade Launcher</label>
-		<description>A hand held mortar designed for mech operation built with a six round revolving action to allow for quick successive shots.\n\nThis weapon is designed specifically for automatroid use,it's so heavy only specific automatroids can operate it.</description>
+		<description>A hand held mortar designed for mech operation built with a six round revolving action to allow for quick successive shots.\n\nThis weapon is designed specifically for automatroid use,it's so heavy only specific automatroids can operate it.</description>	
+		<uiIconScale>0.4</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Dragoon_GL</texPath>
 			<drawSize>2.5</drawSize>
@@ -631,6 +639,7 @@
 			<li>NoSwitch</li>
 			<li>DMS_MechWeaponUltraHeavy</li>
 		</weaponTags>
+		<uiIconScale>0.45</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_DawnBladeM</texPath>
 			<drawSize>5</drawSize>

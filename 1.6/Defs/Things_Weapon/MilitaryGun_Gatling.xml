@@ -293,6 +293,7 @@
 			<li>V_Gatling30mm</li>
 			<li>DMS_MechWeaponUltraHeavy</li>
 		</weaponTags>
+		<uiIconScale>0.5</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_GAU8</texPath>
 			<drawSize>2.75</drawSize>

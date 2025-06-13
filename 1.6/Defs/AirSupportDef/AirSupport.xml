@@ -4,7 +4,7 @@
 		<defName>DMS_AirRaidTest</defName>
 		<label>Air Raid Test</label>
 		<comps>
-			<li Class="Fortified.AirSupportComp_SetOriginRandomEdge" />
+			<li Class="Fortified.AirSupportComp_SetOriginRandomEdge"/>
 			<li Class="Fortified.AirSupportComp_StrafeII">
 				<ProjectileDef>Bullet_CASAC</ProjectileDef>
 				<spreadRadius>3</spreadRadius><!-- 散佈 -->
@@ -78,6 +78,11 @@
 				<soundDef>DMS_JetFlyBy</soundDef>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="Fortified.AirSupportExtension">
+				<factionDef>DMS_Army</factionDef>
+			</li>
+		</modExtensions>
 	</Fortified.AirSupportDef>
 
 	<Fortified.AirSupportDef>
@@ -96,6 +101,11 @@
 				<soundDef>DMS_Shot_DistanceMortar</soundDef>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="Fortified.AirSupportExtension">
+				<factionDef>DMS_Army</factionDef>
+			</li>
+		</modExtensions>
 	</Fortified.AirSupportDef>
 
 	<Fortified.AirSupportDef>
@@ -114,6 +124,11 @@
 				<soundDef>DMS_Shot_DistanceEmpero</soundDef>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="Fortified.AirSupportExtension">
+				<factionDef>DMS_Army</factionDef>
+			</li>
+		</modExtensions>
 	</Fortified.AirSupportDef>
 
 	<ThingDef ParentName="BaseBullet">

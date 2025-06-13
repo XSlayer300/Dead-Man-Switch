@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <OutputPath>$(MSBuildThisFileDirectory)/../../1.5/Assemblies</OutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>10.0</LangVersion>
+    <BaseOutputPath></BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Melee\**" />
+    <EmbeddedResource Remove="Melee\**" />
+    <None Remove="Melee\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Melee\Verb_MeleeSweep.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="VFECore">
+      <HintPath>$(MSBuildThisFileDirectory)/../Reference/VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.4104" />
+    <PackageReference Include="Lib.Harmony" Version="2.3.3" />
+    <PackageReference Include="Krafs.Publicizer" Version="2.2.1" />
+
+    <Publicize Include="Assembly-CSharp:RimWorld.CompTargetable.selectedTarget" />
+    <Publicize Include="Assembly-CSharp:RimWorld.LordToil_Siege.SetAsDefender" />
+
+  </ItemGroup>
+
+</Project>

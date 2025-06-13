@@ -104,39 +104,6 @@
             </li>
 
             <li Class="PatchOperationReplace">
-                <xpath>
-                    Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/comps/li[@Class="MVCF.Comps.CompProperties_VerbProps"]/verbProps</xpath>
-                <value>
-                    <verbProps>
-                        <li>
-                            <label>LaunchSAM</label>
-                            <visualLabel>launch SAM</visualLabel>
-                            <description>launch 9M311 missile</description>
-                            <canBeToggled>true</canBeToggled>
-                            <comps>
-                                <li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
-                                    <compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
-                                    <cooldownTime>15</cooldownTime>
-                                </li>
-                                <li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
-                                    <compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
-                                    <AmmoFilter>
-                                        <thingDefs>
-                                            <li>Ammo_9M311_SAM</li>
-                                        </thingDefs>
-                                    </AmmoFilter>
-                                    <ItemsPerShot>1</ItemsPerShot>
-                                    <MaxShots>4</MaxShots>
-                                    <ReloadSound>Reload_Standard</ReloadSound>
-                                    <ReloadTimePerShot>10</ReloadTimePerShot>
-                                </li>
-                            </comps>
-                        </li>
-                    </verbProps>
-                </value>
-            </li>
-
-            <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/verbs</xpath>
                 <value>
                     <verbs>
