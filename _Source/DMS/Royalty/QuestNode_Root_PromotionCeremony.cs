@@ -15,6 +15,7 @@ namespace DMS
         public static ThingDef DMS_Shuttle;
         public static TransportShipDef DMS_Ship_TransportShuttle;
     }
+
     public class QuestNode_Root_PromotionCeremony : QuestNode
     {
         public const string QuestTag = "Bestowing";

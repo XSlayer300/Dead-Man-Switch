@@ -11,7 +11,5 @@ D:\Steam\steamapps\common\RimWorld\Mods\Dead-Man-Switch\_Source\DMS\obj\Debug\DM
 D:\Steam\steamapps\common\RimWorld\Mods\Dead-Man-Switch\_Source\DMS\obj\Debug\DMS.AssemblyInfoInputs.cache
 D:\Steam\steamapps\common\RimWorld\Mods\Dead-Man-Switch\_Source\DMS\obj\Debug\DMS.AssemblyInfo.cs
 D:\Steam\steamapps\common\RimWorld\Mods\Dead-Man-Switch\_Source\DMS\obj\Debug\DMS.csproj.CoreCompileInputs.cache
-D:\Steam\steamapps\common\RimWorld\Mods\Dead-Man-Switch\_Source\DMS\obj\Debug\DMS.sourcelink.json
-D:\Steam\steamapps\common\RimWorld\Mods\Dead-Man-Switch\_Source\DMS\obj\Debug\DMS.csproj.Up2Date
 D:\Steam\steamapps\common\RimWorld\Mods\Dead-Man-Switch\_Source\DMS\obj\Debug\DMS.dll
-D:\Steam\steamapps\common\RimWorld\Mods\Dead-Man-Switch\_Source\DMS\obj\Debug\DMS.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\Dead-Man-Switch\1.6\Assemblies\DMS.dll
