@@ -57,7 +57,7 @@
 		  <li Class="Fortified.CompPropertiesMultipleTurretGun">
           <subTurrets>
             <li>
-              <ID>heavy machinegun</ID>
+              <ID>General-purpose machine gun</ID>
               <turret>DMS_HeavyMachineGunMounted</turret>
               <autoAttack>true</autoAttack>
               <warmingTime>5</warmingTime>
