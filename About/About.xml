@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>The Dead Man's Switch</name>
+	<packageId>Aoba.DeadManSwitch.Core</packageId>
+	<authors>
+		<li>AobaKuma</li>
+		<li>Bread Mo</li>
+		<li>Bill Doors</li>
+		<li>KV4EX</li>
+	</authors>
 	<modIconPath IgnoreIfNoMatchingField="true">UI/NaraLogo</modIconPath>
-	<author>AobaKuma ,Bill Doors, Bread Mo, KV4EX</author>
+	<modVersion IgnoreIfNoMatchingField="true">1.7.53</modVersion>
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>Aoba.DeadManSwitch.Core</packageId>
 	<modDependenciesByVersion>
 		<v1.4>
 			<li>
@@ -36,8 +42,15 @@
 		</v1.5>
 		<v1.6>
 			<li>
-				<packageId>ludeon.rimworld.biotech</packageId>
+				<packageId>brrainz.harmony</packageId>
+				<displayName>Harmony</displayName>
+				<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+				<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+			</li>
+			<li>
 				<displayName>Biotech</displayName>
+				<downloadUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech/</downloadUrl>
+				<packageId>Ludeon.Rimworld.Biotech</packageId>
 			</li>
 			<li>
 				<packageId>AOBA.Framework</packageId>

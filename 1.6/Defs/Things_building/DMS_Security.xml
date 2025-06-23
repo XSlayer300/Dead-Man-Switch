@@ -29,11 +29,9 @@
       <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Flickable" />
     </comps>
-
     <modExtensions>
       <li Class="Fortified.ForceTargetableExtension" />
     </modExtensions>
-
     <damageMultipliers>
       <li>
         <damageDef>Cut</damageDef>
@@ -493,10 +491,6 @@
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_GateKeeper</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
-    <!-- <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -653,10 +647,6 @@
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_5ETs16U</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
-    <!-- <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -846,8 +836,7 @@
     </verbs>
   </ThingDef>
 
-  <!--Dawnblade
-  Fixed Mount-->
+  <!--Dawnblade Mount-->
 
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Dawnblade</defName>

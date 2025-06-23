@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef Name="BaseMechRace_Falcon" ParentName="BaseAutomatroidRace" Abstract="True">
+  <ThingDef Name="BaseMechRace_VertiBird" ParentName="BaseAutomatroidRace" Abstract="True">
     <statBases>
       <MoveSpeed>8</MoveSpeed>
       <ArmorRating_Sharp>0.2</ArmorRating_Sharp><!--銳抗-->

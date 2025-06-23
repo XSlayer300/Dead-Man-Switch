@@ -1,64 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <WorkGiverDef>
-    <defName>DMS_Operate</defName>
-    <label>Operate Machine</label>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Crafting</workType>
-    <priorityInType>140</priorityInType>
-    <fixedBillGiverDefs>
-      <li>DMS_TableArtifuscle</li>
-      <li>DMS_TableMachinePrinter</li>
-      <li>DMS_ReactionChamber</li>
-      <li>DMS_Furnace</li>
-    </fixedBillGiverDefs>
-    <verb>Operate</verb>
-    <gerund>Operating at</gerund>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
-
-	<ThingDef ParentName="BenchBase" Name="DMS_BenchBase" Abstract="True">
-		<thingClass>Building_WorkTable</thingClass>
-		<castEdgeShadows>true</castEdgeShadows>
-		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-		<altitudeLayer>Building</altitudeLayer>
-		<fillPercent>0.8</fillPercent>
-		<useHitPoints>True</useHitPoints>
-		<designationCategory>DMS_Category</designationCategory>
-		<passability>PassThroughOnly</passability>
-		<pathCost>80</pathCost>
-		<hasInteractionCell>True</hasInteractionCell>
-		<surfaceType>Item</surfaceType>
-	  <inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-		</building>
-		<constructEffect>ConstructMetal</constructEffect>
-		<comps>
-			<li Class="CompProperties_Breakdownable"/>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>ToolCabinet</li>
-					<li MayRequire="Aoba.Fortress.Industrial.Citadel">FT_transformer</li>
-				</linkableFacilities>
-			</li>
-      <li MayRequire="VanillaExpanded.VFEA" Class="VFEAncients.CompProperties_SolarPowerUp"/>
-		</comps>
-    <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-    </placeWorkers>
-	</ThingDef>
-
-  <ThingDef ParentName="DMS_BenchBase">
+  <ThingDef ParentName="DMS_AutofacturerBenchBase">
     <defName>DMS_ReactionChamber</defName>
     <label>Pressure Chamber</label>
     <!-- 巨大的工業生產設備,用於在常溫常壓環境下製造出高壓環境來使材料發生交互反應. -->
@@ -78,7 +20,7 @@
       <Steel>300</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
 	    <ComponentSpacer>1</ComponentSpacer>
-    </costList>   
+    </costList>
     <statBases>
       <WorkToBuild>3000</WorkToBuild>
       <MaxHitPoints>1200</MaxHitPoints>
@@ -87,7 +29,7 @@
       <WorkTableWorkSpeedFactor>2.0</WorkTableWorkSpeedFactor>
     </statBases>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <size>(3,3)</size> 
+    <size>(3,3)</size>
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <recipes>
@@ -97,6 +39,7 @@
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>900</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
       </li>
     </comps>
     <researchPrerequisites>
@@ -109,10 +52,28 @@
           <li>BiofuelRefinery</li>
         </inheritRecipesFrom>
       </li>
+      <li Class="Fortified.ModExtension_AutoWorkTable">
+        <workAmountPerStage>10000</workAmountPerStage>
+        <activeMote>DMS_Mote_ReactionChamberActive</activeMote>
+        <phaseEffecter_east>DMS_Effect_ReactionChamber</phaseEffecter_east>
+        <phaseEffecter_west>DMS_Effect_ReactionChamber</phaseEffecter_west>
+        <phaseEffecter_north>DMS_Effect_ReactionChamber</phaseEffecter_north>
+        <phaseEffecter_south>DMS_Effect_ReactionChamber</phaseEffecter_south>
+        <doneEffecter_east>DMS_SinteringFurnaceDone</doneEffecter_east>
+        <doneEffecter_west>DMS_SinteringFurnaceDone</doneEffecter_west>
+        <doneEffecter_north>DMS_SinteringFurnaceDone</doneEffecter_north>
+        <doneEffecter_south>DMS_SinteringFurnaceDone</doneEffecter_south>
+        <skills>
+          <li>
+            <key>Crafting</key>
+            <value>12</value>
+          </li>
+        </skills>
+      </li>
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="DMS_BenchBase">
+  <ThingDef ParentName="DMS_AutofacturerBenchBase">
     <defName>DMS_Furnace</defName>
     <label>Sintering Furnace</label>
     <!--巨大的工業生產設備,用於在封閉空間中製造超高溫環境來使金屬或陶瓷燒結,也可以用來熔煉金屬.  -->
@@ -131,7 +92,7 @@
     <costList>
       <Steel>400</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>   
+    </costList>
     <statBases>
       <WorkToBuild>3000</WorkToBuild>
       <MaxHitPoints>2000</MaxHitPoints>
@@ -140,16 +101,16 @@
       <WorkTableWorkSpeedFactor>3.0</WorkTableWorkSpeedFactor>
     </statBases>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <size>(3,3)</size> 
+    <size>(3,3)</size>
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
-    <recipes>
-    </recipes>
+    <recipes/>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>2000</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Glower">
@@ -171,10 +132,29 @@
           <li>ElectricSmelter</li>
         </inheritRecipesFrom>
       </li>
+      <li Class="Fortified.ModExtension_AutoWorkTable">
+        <workAmountPerStage>30000</workAmountPerStage>
+        <northOnly>true</northOnly>
+        <activeMote>DMS_Mote_SinteringFurnaceActive</activeMote>
+        <phaseEffecter_east>DMS_SinteringFurnaceActive_East</phaseEffecter_east>
+        <phaseEffecter_west>DMS_SinteringFurnaceActive_West</phaseEffecter_west>
+        <phaseEffecter_north>DMS_SinteringFurnaceActive_North</phaseEffecter_north>
+        <phaseEffecter_south>DMS_SinteringFurnaceActive_South</phaseEffecter_south>
+        <doneEffecter_east>DMS_SinteringFurnaceDone</doneEffecter_east>
+        <doneEffecter_west>DMS_SinteringFurnaceDone</doneEffecter_west>
+        <doneEffecter_north>DMS_SinteringFurnaceDone</doneEffecter_north>
+        <doneEffecter_south>DMS_SinteringFurnaceDone</doneEffecter_south>
+        <skills>
+          <li>
+            <key>Crafting</key>
+            <value>10</value>
+          </li>
+        </skills>
+      </li>
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="DMS_BenchBase">
+  <ThingDef ParentName="DMS_AutofacturerBenchBase">
     <defName>DMS_TableArtifuscle</defName>
     <label>Artifuscle Chamber</label>
     <!-- 用於培育人工肌肉束與人工肌肉仿生體的高端生產設備. -->
@@ -194,14 +174,14 @@
       <Steel>170</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
 	    <ComponentSpacer>1</ComponentSpacer>
-    </costList>   
+    </costList>
     <statBases>
       <WorkToBuild>3000</WorkToBuild>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0</Flammability>
       <Cleanliness>2</Cleanliness>
     </statBases>
-    <size>(3,1)</size> 
+    <size>(3,1)</size>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <recipes>
@@ -211,6 +191,7 @@
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>800</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
       </li>
     </comps>
     <researchPrerequisites>
@@ -220,7 +201,7 @@
 
   <!-- 機械打印機 -->
 
-  <ThingDef ParentName="DMS_BenchBase">
+  <ThingDef ParentName="DMS_AutofacturerBenchBase">
     <defName>DMS_TableMachinePrinter</defName>
     <label>Machinery Printer</label>
     <description>A composite metal printer which can manufacture and assemble metal products and weapons through cold forging in order to mass-produce machinery.</description>
@@ -257,6 +238,7 @@
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>1000</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
       </li>
     </comps>
     <researchPrerequisites>
@@ -268,7 +250,20 @@
           <li>ElectricSmithy</li>
         </inheritRecipesFrom>
       </li>
+      <li Class="Fortified.ModExtension_AutoWorkTable">
+        <workAmountPerStage>10000</workAmountPerStage>
+        <phaseEffecter_east>DMS_Effect_Printer</phaseEffecter_east>
+        <phaseEffecter_west>DMS_Effect_Printer</phaseEffecter_west>
+        <phaseEffecter_north>DMS_Effect_Printer</phaseEffecter_north>
+        <phaseEffecter_south>DMS_Effect_Printer</phaseEffecter_south>
+        <skills>
+          <li>
+            <key>Crafting</key>
+            <value>12</value>
+          </li>
+        </skills>
+      </li>
     </modExtensions>
   </ThingDef>
 
-</Defs>	
+</Defs>
