@@ -205,12 +205,6 @@
                 </weaponTags>
             </li>
 
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DMS_MK44_Autocannon"]/statBases</xpath>
-                <value>
-                    <ToughnessRating>12</ToughnessRating>
-                </value>
-            </li>
            
             <!--===== MK44大毒蛇2機炮 =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
