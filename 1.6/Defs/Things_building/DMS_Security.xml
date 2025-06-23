@@ -578,6 +578,95 @@
   </ThingDef>
 
 
+  <!--MK44 大毒蛇2 海軍型炮塔-->
+  <ThingDef ParentName="DMS_BaseCannonBuilding">
+    <defName>DMS_Turret_MK44_Navy</defName>
+    <label>MK44 BushMaster-II</label>
+    <description>The 30x173mm MK44 Bushmaster II autocannon, despite its modest 200 RPM rate of fire, achieves reliable defensive performance through good accuracy and adequate lethality.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Turrets/DMS_M161</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>2.8</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <fillPercent>0.7</fillPercent>
+
+    <statBases>   <!--================血量與重量工作量================-->
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToBuild>4500</WorkToBuild>
+      <Beauty>-2</Beauty>
+      <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+    </statBases>
+
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <outOfFuelMessage>Cannot shoot: Needs new reinforced barrel.</outOfFuelMessage>
+        <fuelFilter>
+          <thingDefs>
+            <li>ReinforcedBarrel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
+        <fuelCapacity>140</fuelCapacity>    <!-- 100 burst -->
+        <fuelMultiplier>70</fuelMultiplier><!-- 1 Barrel=70 ammo -->
+        <initialFuelPercent>0.2</initialFuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>1000</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>225</basePowerConsumption>
+      </li>
+    </comps>
+
+    <building>
+      <turretGunDef>DMS_Gun_MK44_Navy</turretGunDef>
+      <turretTopDrawSize>3</turretTopDrawSize>
+      <turretBurstWarmupTime>1.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+      <turretBurstCooldownTime>0.75</turretBurstCooldownTime>
+    </building>
+
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+
+    <costList>
+      <Steel>280</Steel>
+      <Tungsteel>130</Tungsteel>
+      <ComponentStamped>7</ComponentStamped>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+
+    <researchPrerequisites>
+      <li>DMS_EquipmentElite</li>
+    </researchPrerequisites>
+
+    <uiIconPath>Things/Turrets/DMS_MK44_Navy</uiIconPath>
+    <uiIconScale>1.25</uiIconScale>
+
+    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+    <!-- <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories> -->
+
+    <placeWorkers>
+      <li>PlaceWorker_BandNode</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+
   <!--遙控砲塔-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Okhotnik</defName>
