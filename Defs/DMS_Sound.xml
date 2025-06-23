@@ -236,7 +236,7 @@
   </SoundDef>
 
   <SoundDef>
-    <defName>DMS_Shot_MK44</defName>
+    <defName>DMS_Shot_Bushmaster</defName>
     <context>MapOnly</context>
     <maxSimultaneous>6</maxSimultaneous>
     <subSounds>
