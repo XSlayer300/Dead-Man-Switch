@@ -698,7 +698,7 @@
         <ai_AvoidFriendlyFireRadius>1</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>18</ticksBetweenBurstShots>
         <burstShotCount>5</burstShotCount>
-        <soundCast>DMS_Shot_MK44</soundCast>
+        <soundCast>DMS_Shot_Bushmaster</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>22</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
