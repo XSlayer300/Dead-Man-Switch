@@ -276,7 +276,7 @@
 				</Properties>
 				<AmmoUser>
 					<magazineSize>100</magazineSize>
-					<reloadTime>5</reloadTime>
+					<reloadTime>10</reloadTime>
 					<ammoSet>AmmoSet_30x173mmNATO</ammoSet>
 				</AmmoUser>
 				<FireModes>
