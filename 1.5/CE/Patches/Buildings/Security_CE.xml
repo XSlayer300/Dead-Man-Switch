@@ -267,7 +267,7 @@
 		                    <warmupTime>0.75</warmupTime>
 		                    <range>78</range>
 		                    <minRange>1.5</minRange>
-		                    <soundCast>DMS_Shot_MK44</soundCast>
+		                    <soundCast>DMS_Shot_Bushmaster</soundCast>
 		                    <soundCastTail>GunTail_Heavy</soundCastTail>
 		                    <muzzleFlashScale>16</muzzleFlashScale>
 		                    <targetParams>
