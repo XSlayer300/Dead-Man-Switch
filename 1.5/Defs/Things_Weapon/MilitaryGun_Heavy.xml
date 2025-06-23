@@ -332,6 +332,91 @@
 		</comps>
 	</ThingDef>
 
+	<!--====MK44大毒蛇2機炮====-->
+	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
+		<defName>DMS_Gun_MK44_Autocannon</defName>
+		<label>MK44 BushMasterII AutoCannon</label>
+		<description>The MK44 Bushmaster II autocannon is a low-rate-of-fire (200 RPM), high-power, and high-precision weapon. It can be equipped on medium-sized mechanoids and fires 30×173mm NATO ammunition, effectively filling the role of a precision burst-fire autocannon.</description>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_Gun_MK44</texPath>
+			<drawSize>2.3</drawSize>
+		</graphicData>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+			<li>Ranged</li>
+		</weaponClasses>
+
+		<weaponTags>
+			<li>DMS_MechWeaponHeavy</li>
+			<li>A_SuppressWeaponHeavy</li>
+			<li>DMS_VehicleWeapon</li>
+		</weaponTags>
+
+		<soundInteract>Interact_Rifle</soundInteract>
+
+		<statBases>
+			<WorkToMake>90000</WorkToMake>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.88</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<Mass>130</Mass>
+			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+		</statBases>
+
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>DMS_EquipmentHeavy</li>
+				<li>HeavyTurrets</li>
+			</researchPrerequisites>
+		</recipeMaker>
+
+		<costList>
+			<Tungsteel>200</Tungsteel>
+			<ComponentStamped>14</ComponentStamped>	
+		</costList>	
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
+				<warmupTime>1.85</warmupTime>
+				<minRange>2.9</minRange>
+				<range>39.9</range>
+				<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>DMS_Shot_MK44</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>22</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<forcedMissRadius>1.1</forcedMissRadius>
+			</li>
+		</verbs>
+
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.5,1.4)</drawSize>
+				<offsets>
+					<li>(1.2,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="Fortified.HeavyEquippableExtension">
+				<EquippableDef>HeavyAutomatroid</EquippableDef>
+			</li>
+		</modExtensions>
+		
+	</ThingDef>
+
 	<!--2A38M 給駭蜥Boss的武器-->
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_Gun_2A38M</defName>
