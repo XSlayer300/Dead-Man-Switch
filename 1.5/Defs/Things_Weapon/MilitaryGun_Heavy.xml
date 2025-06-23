@@ -338,7 +338,7 @@
 		<label>MK44 BushMasterII AutoCannon</label>
 		<description>The MK44 Bushmaster II autocannon is a low-rate-of-fire (200 RPM), high-power, and high-precision weapon. It can be equipped on medium-sized mechanoids and fires 30×173mm NATO ammunition, effectively filling the role of a precision burst-fire autocannon.</description>
 		<graphicData>
-			<texPath>Things/Weapons/DMS_Gun_MK44</texPath>
+			<texPath>Things/Weapons/DMS_Weapon_MK44</texPath>
 			<drawSize>2.3</drawSize>
 		</graphicData>
 		<weaponClasses>
