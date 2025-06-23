@@ -236,6 +236,23 @@
   </SoundDef>
 
   <SoundDef>
+    <defName>DMS_Shot_MK44</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>6</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>DMS_Cannon/MK44</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.954118~1.045882</pitchRange>
+        <volumeRange>29~31</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
     <defName>DMS_Shot_GAU</defName>
     <context>MapOnly</context>
     <maxSimultaneous>12</maxSimultaneous>
