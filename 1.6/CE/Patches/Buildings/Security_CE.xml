@@ -40,12 +40,12 @@
                     ]/comps/li[@Class="CompProperties_Explosive"]</xpath>
 			</li>
 			
-			<!-- <li Class="PatchOperationAdd">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Turret_GateKeeper"]</xpath>
 				<value>
 					<thingClass MayRequire="CETeam.CombatExtended">CombatExtended.Building_CIWS_CE</thingClass>
 				</value>
-			</li> -->
+			</li>
 
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="DMS_BaseCannonBuilding"]/statBases </xpath>
