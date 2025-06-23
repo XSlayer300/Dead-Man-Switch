@@ -666,6 +666,59 @@
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
   </ThingDef>
 
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>DMS_Gun_MK44_Navy</defName>
+    <label>MK44 BushMaster-II</label>
+    <description>The 30x173mm MK44 Bushmaster II autocannon, despite its modest 200 RPM rate of fire, achieves reliable defensive performance through good accuracy and adequate lethality.</description>
+    <graphicData>
+      <texPath>Things/Turrets/DMS_Gun_MK44_Navy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>3.8</drawSize>
+    </graphicData>
+
+    <statBases>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.87</AccuracyMedium>
+      <AccuracyLong>0.82</AccuracyLong>
+      <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+    </statBases>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
+        <requireLineOfSight>true</requireLineOfSight>
+        <warmupTime>1.5</warmupTime>
+        <minRange>2</minRange>
+        <range>48.5</range>
+        <ai_AvoidFriendlyFireRadius>1</ai_AvoidFriendlyFireRadius>
+        <ticksBetweenBurstShots>18</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
+        <soundCast>DMS_Shot_Bushmaster</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>22</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <forcedMissRadius>0.9</forcedMissRadius>
+      </li>
+    </verbs>
+
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(1.5,1.5)</drawSize>
+        <offsets>
+          <li>(1.3,0)</li>
+        </offsets>
+        <isAlternately>true</isAlternately>
+      </li>
+    </modExtensions>
+
+  </ThingDef>	
+
 
   <!--遙控砲塔-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
