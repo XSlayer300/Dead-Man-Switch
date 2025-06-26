@@ -154,53 +154,7 @@
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="DMS_AutofacturerBenchBase">
-    <defName>DMS_TableArtifuscle</defName>
-    <label>Artifuscle Chamber</label>
-    <!-- 用於培育人工肌肉束與人工肌肉仿生體的高端生產設備. -->
-    <description>High-end production equipment for cultivating Artifuscle and bionics.</description>
-    <graphicData>
-      <texPath>Things/Building/ArtifuscleTable</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(5,3)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <costList>
-      <Steel>170</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-	    <ComponentSpacer>1</ComponentSpacer>
-    </costList>
-    <statBases>
-      <WorkToBuild>3000</WorkToBuild>
-      <MaxHitPoints>200</MaxHitPoints>
-      <Flammability>0</Flammability>
-      <Cleanliness>2</Cleanliness>
-    </statBases>
-    <size>(3,1)</size>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-    <recipes>
-    </recipes>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <shortCircuitInRain>true</shortCircuitInRain>
-        <basePowerConsumption>800</basePowerConsumption>
-        <idlePowerDraw>50</idlePowerDraw>
-      </li>
-    </comps>
-    <researchPrerequisites>
-      <li>DMS_Artifuscle</li>
-    </researchPrerequisites>
-  </ThingDef>
-
-  <!-- 機械打印機 -->
-
+  <!-- DMS_TableMachinePrinter -->
   <ThingDef ParentName="DMS_AutofacturerBenchBase">
     <defName>DMS_TableMachinePrinter</defName>
     <label>Machinery Printer</label>
@@ -252,10 +206,10 @@
       </li>
       <li Class="Fortified.ModExtension_AutoWorkTable">
         <workAmountPerStage>10000</workAmountPerStage>
-        <phaseEffecter_east>DMS_Effect_Printer</phaseEffecter_east>
-        <phaseEffecter_west>DMS_Effect_Printer</phaseEffecter_west>
-        <phaseEffecter_north>DMS_Effect_Printer</phaseEffecter_north>
-        <phaseEffecter_south>DMS_Effect_Printer</phaseEffecter_south>
+        <phaseEffecter_east>DMS_Effect_Printer_East</phaseEffecter_east>
+        <phaseEffecter_west>DMS_Effect_Printer_West</phaseEffecter_west>
+        <phaseEffecter_north>DMS_Effect_Printer_North</phaseEffecter_north>
+        <phaseEffecter_south>DMS_Effect_Printer_South</phaseEffecter_south>
         <skills>
           <li>
             <key>Crafting</key>
@@ -265,5 +219,4 @@
       </li>
     </modExtensions>
   </ThingDef>
-
 </Defs>

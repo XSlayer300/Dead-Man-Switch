@@ -75,4 +75,5 @@
     <thingClass>Fortified.Building_WorkTableAutonomous</thingClass>
     <tickerType>Normal</tickerType>
   </ThingDef>
+  
 </Defs>
