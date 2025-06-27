@@ -82,9 +82,9 @@
     <requiredResearchBuilding Inherit="False"/>
     <prerequisites>
       <li>DMS_Material</li>
-    </prerequisites>
+    </prerequisites> 
     <researchViewX>2.00</researchViewX>
-    <researchViewY>2.50</researchViewY>
+    <researchViewY>1.70</researchViewY>
     <generalRules/>
   </ResearchProjectDef>
 
