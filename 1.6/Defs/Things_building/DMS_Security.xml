@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <ThingDef Name="DMS_BaseCannonBuilding" ParentName="BuildingBase" Abstract="True">
     <thingClass>Building_TurretGun</thingClass>
@@ -11,8 +10,8 @@
         <cornerTL>Damage/Corner</cornerTL>
       </damageData>
       <shadowData>
-        <offset>(-0.13,-0.87,-0.1)</offset>
-        <volume>(0.5,0.4,1.05)</volume>
+        <offset>(0,-0.25,-0.25)</offset>
+        <volume>(0.5,0.5,0.5)</volume>
       </shadowData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
@@ -280,6 +279,56 @@
     <researchPrerequisites>
       <li>HeavyTurrets</li>
     </researchPrerequisites>
+  </ThingDef>
+
+<!--哨戒砲塔-->
+  <ThingDef ParentName="DMS_BaseCannonBuilding">
+    <defName>DMS_Turret_Sentry</defName>
+    <label>Sentry turret</label>
+    <description>一種快速部屬的一次性遙控砲塔，展開後可以持續使用12小時左右。並在能量用光之後自動關機。這類裝備通常被部屬在巷戰環境中來伏擊進入街道的敵人來阻滯對方的突襲。</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Turrets/Tripod</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1</drawSize>
+      <drawOffset>(0,0,-0.1)</drawOffset>
+    </graphicData>
+    <size>(1,1)</size>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory Inherit="false"/>
+    <fillPercent>0.7</fillPercent>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToBuild>4500</WorkToBuild>
+      <Beauty>-2</Beauty>
+      <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+    </statBases>
+    <comps Inherit="false">
+      <li MayRequire="VanillaExpanded.VFEA" Class="VFEAncients.CompProperties_SolarPowerUp" />
+      <li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_MechPowerCell">
+				<totalPowerTicks>30000</totalPowerTicks>
+				<killWhenDepleted>false</killWhenDepleted>
+				<labelOverride>Battery power</labelOverride>
+				<tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</tooltipOverride>
+			</li>
+    </comps>
+    <building>
+      <turretGunDef>DMS_SubMachineGunMounted</turretGunDef>
+      <turretTopDrawSize>1</turretTopDrawSize>
+      <turretBurstWarmupTime>0.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+      <turretBurstCooldownTime>1</turretBurstCooldownTime>
+    </building>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentStamped>1</ComponentStamped>
+    </costList>
+    <researchPrerequisites Inherit="false">
+      <li>DMS_EquipmentBasis</li>
+    </researchPrerequisites>
+    <uiIconPath>Things/Turrets/DMS_SentryTurret</uiIconPath>
+    <uiIconScale>1.25</uiIconScale>
   </ThingDef>
 
   <!-- <ThingDef ParentName="DMS_BaseCannonBuilding">
@@ -594,15 +643,13 @@
     <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <fillPercent>0.7</fillPercent>
-
-    <statBases>   <!--================血量與重量工作量================-->
+    <statBases>
       <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>4500</WorkToBuild>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
     </statBases>
-
     <comps>
       <li Class="CompProperties_Refuelable">
         <fuelLabel>Shots until barrel change</fuelLabel>
@@ -631,35 +678,24 @@
         <basePowerConsumption>225</basePowerConsumption>
       </li>
     </comps>
-
     <building>
       <turretGunDef>DMS_Gun_MK44_Navy</turretGunDef>
       <turretTopDrawSize>3</turretTopDrawSize>
       <turretBurstWarmupTime>1.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>0.75</turretBurstCooldownTime>
     </building>
-
     <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
-
     <costList>
       <Steel>280</Steel>
       <Tungsteel>130</Tungsteel>
       <ComponentStamped>7</ComponentStamped>
       <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
-
     <researchPrerequisites>
       <li>DMS_EquipmentElite</li>
     </researchPrerequisites>
-
     <uiIconPath>Things/Turrets/DMS_MK44_Navy</uiIconPath>
     <uiIconScale>1.25</uiIconScale>
-
-    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
-    <!-- <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories> -->
-
     <placeWorkers>
       <li>PlaceWorker_BandNode</li>
     </placeWorkers>

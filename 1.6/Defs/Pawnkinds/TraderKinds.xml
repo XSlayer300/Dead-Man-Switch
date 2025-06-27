@@ -6,7 +6,6 @@
     <faction>DMS_Army</faction>
     <permitRequiredForTrading MayRequire="Ludeon.RimWorld.Royalty">TradeSettlement</permitRequiredForTrading>
     <stockGenerators>
-
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
@@ -443,6 +442,9 @@
         <thingDef>Gold</thingDef>
       </li>
       <li Class="StockGenerator_BuySingleDef">
+        <thingDef>ComponentStamped</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
         <thingDef>Neurocomputer</thingDef>
       </li>
       <li Class="StockGenerator_BuySingleDef">
@@ -599,6 +601,10 @@
         </countChances>
       </li>
 
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>DMS_Schematic</thingDef>
+        <countRange>3~5</countRange>
+      </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>TextBook</thingDef>
         <countRange>0~5</countRange>

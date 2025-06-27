@@ -75,6 +75,20 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_Autofacturer</defName>
+    <label>mass production</label>
+    <description>透過改進的生產工藝使得材料的加工生產流程能夠盡可能自動化與規模化。</description>
+    <baseCost>2000</baseCost>
+    <requiredResearchBuilding Inherit="False"/>
+    <prerequisites>
+      <li>DMS_Material</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2.50</researchViewY>
+    <generalRules/>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_Plasfiber</defName>
     <label>Artificial Fiber</label>
     <description>Create polyster and plastifiber, manmade fabrics synthesized for their unique properties across multiple disciplines.</description>
@@ -304,7 +318,6 @@
     <requiredResearchBuilding Inherit="False"/>
     <prerequisites>
       <li>ComplexClothing</li>
-      <li>Gunsmithing</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>4.80</researchViewY>
@@ -353,7 +366,6 @@
     <baseCost>750</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>ComplexClothing</li>
       <li>Gunsmithing</li>
     </prerequisites>
     <researchViewX>1.00</researchViewX>
@@ -367,7 +379,6 @@
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>ComplexClothing</li>
       <li>Gunsmithing</li>
     </prerequisites>
     <researchViewX>2.00</researchViewX>
@@ -381,7 +392,6 @@
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>ComplexClothing</li>
       <li>Gunsmithing</li>
     </prerequisites>
     <researchViewX>3.00</researchViewX>

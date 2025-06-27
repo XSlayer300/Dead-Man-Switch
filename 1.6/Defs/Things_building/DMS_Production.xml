@@ -44,7 +44,7 @@
     </comps>
     <researchPrerequisites>
       <li>BiofuelRefining</li>
-      <li>DMS_Material</li>
+      <li>DMS_Autofacturer</li>
     </researchPrerequisites>
     <modExtensions>
       <li Class="RecipeInheritance.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
@@ -124,7 +124,7 @@
     </comps>
     <researchPrerequisites>
       <li>Smithing</li>
-      <li>DMS_Material</li>
+      <li>DMS_Autofacturer</li>
     </researchPrerequisites>
     <modExtensions>
       <li Class="RecipeInheritance.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">

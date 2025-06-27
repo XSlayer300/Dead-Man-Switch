@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-
   <!-- DMS_TableArtifuscle -->
   <ThingDef ParentName="DMS_BenchBase">
     <defName>DMS_TableArtifuscle</defName>
@@ -47,51 +45,4 @@
       <li>DMS_Artifuscle</li>
     </researchPrerequisites>
   </ThingDef>
-  
-  <!-- DMS_TableArtifuscle -->
-  <ThingDef ParentName="DMS_BenchBase">
-    <defName>DMS_TableArtifuscle</defName>
-    <label>Artifuscle Chamber</label>
-    <!-- 用於培育人工肌肉束與人工肌肉仿生體的高端生產設備. -->
-    <description>High-end production equipment for cultivating Artifuscle and bionics.</description>
-    <graphicData>
-      <texPath>Things/Building/ArtifuscleTable</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(5,3)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <costList>
-      <Steel>170</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-	    <ComponentSpacer>1</ComponentSpacer>
-    </costList>
-    <statBases>
-      <WorkToBuild>3000</WorkToBuild>
-      <MaxHitPoints>200</MaxHitPoints>
-      <Flammability>0</Flammability>
-      <Cleanliness>2</Cleanliness>
-    </statBases>
-    <size>(3,1)</size>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-    <recipes>
-    </recipes>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <shortCircuitInRain>true</shortCircuitInRain>
-        <basePowerConsumption>800</basePowerConsumption>
-        <idlePowerDraw>50</idlePowerDraw>
-      </li>
-    </comps>
-    <researchPrerequisites>
-      <li>DMS_Artifuscle</li>
-    </researchPrerequisites>
-  </ThingDef>
-
 </Defs>

@@ -293,6 +293,7 @@
     <stackLimit>25</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
+      <RoyalFavorValue>0.05</RoyalFavorValue>
       <MaxHitPoints>70</MaxHitPoints>
       <MarketValue>60</MarketValue>
       <Mass>1.2</Mass>
