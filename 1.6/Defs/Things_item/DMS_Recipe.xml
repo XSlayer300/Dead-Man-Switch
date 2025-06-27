@@ -14,6 +14,7 @@
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
+	<li>DMS_LabReactor</li>
     </recipeUsers>
     <skillRequirements>
       <Crafting>3</Crafting>
@@ -52,6 +53,7 @@
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
+	<li>DMS_LabReactor</li>
     </recipeUsers>
     <skillRequirements>
       <Crafting>5</Crafting>
@@ -90,6 +92,7 @@
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
+	<li>DMS_LabReactor</li>
     </recipeUsers>
     <skillRequirements>
       <Crafting>3</Crafting>
@@ -138,6 +141,7 @@
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
+	<li>DMS_LabReactor</li>
     </recipeUsers>
     <skillRequirements>
       <Crafting>5</Crafting>
@@ -188,6 +192,7 @@
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
+	<li>DMS_LabFurnace</li>
     </recipeUsers>
     <skillRequirements>
       <Crafting>3</Crafting>
@@ -251,6 +256,7 @@
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
+	<li>DMS_LabFurnace</li> 
     </recipeUsers>
     <skillRequirements>
       <Crafting>5</Crafting>
@@ -314,6 +320,7 @@
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
+	<li>DMS_LabFurnace</li>
     </recipeUsers>
     <skillRequirements>
       <Crafting>2</Crafting>
@@ -368,6 +375,7 @@
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
+	<li>DMS_LabFurnace</li>
     </recipeUsers>
     <skillRequirements>
       <Crafting>4</Crafting>
