@@ -48,16 +48,88 @@
     </researchPrerequisites>
   </ThingDef>
   
-  <!-- DMS_TableArtifuscle -->
+  <!-- DMS_LabReactor -->
   <ThingDef ParentName="DMS_BenchBase">
-    <defName>DMS_TableArtifuscle</defName>
-    <label>Artifuscle Chamber</label>
-    <!-- 用於培育人工肌肉束與人工肌肉仿生體的高端生產設備. -->
-    <description>High-end production equipment for cultivating Artifuscle and bionics.</description>
+    <defName>DMS_LabReactor</defName>
+    <label>Lab Reactor</label>
+    <!-- 實驗型人工反應釜，被用於滿足過渡時期設備或某些袖珍型基地的需求。 -->
+    <description>Experimental non-auto reactor(smaller pressure chamber), designed to meet the needs of transitional-phase equipment or certain compact bases.</description>
     <graphicData>
-      <texPath>Things/Building/ArtifuscleTable</texPath>
+      <texPath>Things/Building/LabReactor</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(5,3)</drawSize>
+      <drawSize>(3.7,3.7)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+
+    <statBases>
+      <Mass>15</Mass>
+      <WorkToBuild>3600</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Cleanliness>-5</Cleanliness>
+      <WorkTableWorkSpeedFactor>0.95</WorkTableWorkSpeedFactor>
+    </statBases>
+
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+
+    <size>(2,2)</size>
+    <interactionCellOffset>(1,0,-1)</interactionCellOffset>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+
+    <recipes>
+    </recipes>
+
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>220</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>5</heatPerSecond>
+      </li>
+    </comps>
+
+    <researchPrerequisites>
+      <li>BiofuelRefining</li>
+      <li>DMS_Material</li>
+    </researchPrerequisites>
+
+    <minifiedDef>MinifiedThing</minifiedDef>
+
+    <modExtensions>
+      <li Class="RecipeInheritance.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+        <inheritRecipesFrom>
+          <li>BiofuelRefinery</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+
+  </ThingDef>
+
+  
+  <!-- DMS_LabFurnace -->
+  <ThingDef ParentName="DMS_BenchBase">
+    <defName>DMS_LabFurnace</defName>
+    <label>Lab Furnace</label>
+    <!-- 實驗型人工燒結爐，被用於滿足過渡時期設備或某些袖珍型基地的需求。 -->
+    <description>Experimental non-auto furnace, designed to meet the needs of transitional-phase equipment or certain compact bases.</description>
+    <graphicData>
+      <texPath>Things/Building/Lab_Furnace</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.8,2.5)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -66,18 +138,22 @@
       </damageData>
     </graphicData>
     <costList>
-      <Steel>170</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-	    <ComponentSpacer>1</ComponentSpacer>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <statBases>
-      <WorkToBuild>3000</WorkToBuild>
+      <Mass>15</Mass>
+      <WorkToBuild>3600</WorkToBuild>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Cleanliness>2</Cleanliness>
+      <Cleanliness>-5</Cleanliness>
+      <WorkTableWorkSpeedFactor>0.95</WorkTableWorkSpeedFactor>
     </statBases>
-    <size>(3,1)</size>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+
+    <size>(2,1)</size>
+    <interactionCellOffset>(1,0,-1)</interactionCellOffset>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <recipes>
     </recipes>
@@ -85,13 +161,29 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
-        <basePowerConsumption>800</basePowerConsumption>
+        <basePowerConsumption>450</basePowerConsumption>
         <idlePowerDraw>50</idlePowerDraw>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>10</heatPerSecond>
       </li>
     </comps>
     <researchPrerequisites>
-      <li>DMS_Artifuscle</li>
+      <li>Smithing</li>
+      <li>DMS_Material</li>
     </researchPrerequisites>
+
+    <minifiedDef>MinifiedThing</minifiedDef>
+
+    <modExtensions>
+      <li Class="RecipeInheritance.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+        <inheritRecipesFrom>
+          <li>ElectricSmelter</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+
   </ThingDef>
 
 </Defs>
