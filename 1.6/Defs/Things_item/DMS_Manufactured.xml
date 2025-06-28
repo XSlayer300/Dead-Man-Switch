@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <!-- 尼龍纖維 玩家能量產的丐版合成纖維，美觀度低但作為衣服十分耐用-->
   <ThingDef ParentName="ResourceBase">
     <defName>Polyester</defName>
