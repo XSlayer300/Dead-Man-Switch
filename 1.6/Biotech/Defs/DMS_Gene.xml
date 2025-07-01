@@ -4,7 +4,7 @@
     <defName>DMS_Wetware</defName>
     <label>wetware gestation</label>
     <labelShortAdj>wetware</labelShortAdj>
-    <description>This is a special directional developmental gene that is designed to cause the embryo to mutate and develop in a predetermined manner during the developmental stage. And grow into a biological wetware computer that is compatible with mechanical interfaces.</description>
+    <description>Carriers of this gene causes the embryo to mutate and develop in a predetermined manner during the developmental stage. This results in in the growth of a biological wetware computer compatible with mechanical interfaces.\n\nA specialized directional development gene, with high potential of abuse and irreversible risks. For this reason, the colonial fleet has classified it as guarded technology and is committed to cracking down on factions on the planet that misuse this technology.</description>
     <geneClass>Fortified.Gene_Wetware</geneClass>
     <iconPath>UI/Gene/Gene_Wetware</iconPath>
     <displayOrderInCategory>80</displayOrderInCategory>

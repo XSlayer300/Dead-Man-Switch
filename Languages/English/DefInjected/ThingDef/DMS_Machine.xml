@@ -2,23 +2,23 @@
 <LanguageData>
   
   <!-- EN: Hound Charging Station -->
-  <DMS_Hound_Base.label>Hound Charging Station</DMS_Hound_Base.label>
+  <DMS_Hound_Base.label>hound recharging station</DMS_Hound_Base.label>
   <!-- EN: A station for assembling and recharging Hounds. -->
-  <DMS_Hound_Base.description>A station for assembling and recharging Hounds.</DMS_Hound_Base.description>
+  <DMS_Hound_Base.description>A station used for assembling and charging hound drone systems.</DMS_Hound_Base.description>
   
   <!-- EN: Automatroid Recharger -->
-  <DMS_Recharger.label>Automatroid Recharger</DMS_Recharger.label>
+  <DMS_Recharger.label>automatroid recharger</DMS_Recharger.label>
   <!-- EN: Automatroids can recharge here. During the charging cycle, toxic wastepacks are produced and stored internally. Haulers must remove the wastepacks from time to time. -->
-  <DMS_Recharger.description>Automatroids can recharge here. During the charging cycle, toxic wastepacks are produced and stored internally. Haulers must remove the wastepacks from time to time.</DMS_Recharger.description>
+  <DMS_Recharger.description>Automatroids and colonial-class drones can recharge here. During recharge, this recharger produces toxic wastepacks and stores them internally. Haulers must remove the wastepacks from time to time.</DMS_Recharger.description>
   
   <!-- EN: Trashbin Charging Station -->
-  <DMS_TrashBin_Base.label>Trashbin Charging Station</DMS_TrashBin_Base.label>
+  <DMS_TrashBin_Base.label>trashbin recharging station</DMS_TrashBin_Base.label>
   <!-- EN: A station for assembling and recharging trashbin units. -->
-  <DMS_TrashBin_Base.description>A station for assembling and recharging trashbin units.</DMS_TrashBin_Base.description>
+  <DMS_TrashBin_Base.description>A station used for assembling and charging trashbin service robots.</DMS_TrashBin_Base.description>
   
   <!-- EN: Verlingbird Charging Station -->
-  <DMS_VerlingBird_Base.label>Verlingbird Charging Station</DMS_VerlingBird_Base.label>
+  <DMS_VerlingBird_Base.label>verlingbird recharging station</DMS_VerlingBird_Base.label>
   <!-- EN: A station for assembling and recharging Verlingbirds. -->
-  <DMS_VerlingBird_Base.description>A station for assembling and recharging Verlingbirds.</DMS_VerlingBird_Base.description>
+  <DMS_VerlingBird_Base.description>A station used for assembling and charging verlingbird recon drones.</DMS_VerlingBird_Base.description>
   
 </LanguageData>

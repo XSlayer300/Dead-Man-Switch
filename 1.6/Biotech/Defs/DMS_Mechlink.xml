@@ -82,8 +82,8 @@
   <!-- Mechlink -->
   <ThingDef ParentName="MechanitorImplantBase">
     <defName>DMS_MechLink_Nerfed</defName>
-    <label>Boid Controller</label>
-    <description>A man-made bionic implant that allows direct control of mechanoids. This is a simplified version which is cheaper to manufacture and obtainable at a lower tech level. Due to limited production quality, it will fail and terminate after a while.</description>
+    <label>individual mech controller link</label>
+    <description>A low-tech, cheap bionic implant often used by non-conscripted soldiers and willing personnel on the front lines as a temporary mechanitor. Once installed, this allows the operator to have direct control of mechanoids for a good amount of time.\n\nDue to issues with manufacturing precision and production quality, these counterfeit implants are not stable; installing them often results in some negative side effects, and the implant's effects will terminate after several days as a safety protocol.</description>
     <thingClass>Mechlink</thingClass>
     <descriptionHyperlinks>
       <HediffDef>MechlinkImplant</HediffDef>
